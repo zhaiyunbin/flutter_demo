@@ -1,7 +1,8 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutterjanfeican/src/resource/img_resources.dart';
-
+/// TODO 文件结构
+/// TODO 命名 Dart Analysis
 class MyHomePage extends StatefulWidget {
   MyHomePage({Key key}) : super(key: key);
 
@@ -10,7 +11,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-
+/// TODO 不必要空隙
 
 
   @override
@@ -25,11 +26,17 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget topView() {
     return Container(
       child: GestureDetector(
+        /* TODO 背景色
+                圆角
+         */
         child: Container(
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               Image.asset(Images.main_def),
+              /* TODO 文本样式
+                      元素间距
+               */
               Text(
                 "搜索菜谱",
               ),
@@ -46,6 +53,7 @@ class _MyHomePageState extends State<MyHomePage> {
       child: CustomScrollView(
         slivers: <Widget>[
           SliverPadding(
+            /// EdgeInsets.all
             padding:  EdgeInsets.fromLTRB(20, 20, 20, 20),
             sliver: new SliverGrid(
               gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
@@ -113,14 +121,16 @@ class MenuItemListCell extends StatelessWidget {
           child: Stack(
             fit: StackFit.expand,
             children: <Widget>[
-              
+              /// TODO 背景图
               SizedBox(
                 width: 60,
                 height: 60,
                 child: ClipRRect(
+                  /// TODO 圆角
                   child: Image.asset(Images.main_def),
                 ),
               ),
+              /// TODO 文本样式
               Text(
                 "菜谱",
               ),

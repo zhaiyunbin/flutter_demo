@@ -33,12 +33,8 @@ class NavigationController extends StatefulWidget {
   __NavigationControllerState createState() => __NavigationControllerState();
 }
 
-
-
 class __NavigationControllerState extends State<NavigationController> {
   int _selectIndex = 0;
-
-
   var _pageListWidget;
 
   void _initTab() {
@@ -58,9 +54,7 @@ class __NavigationControllerState extends State<NavigationController> {
   }
   @override
   Widget build(BuildContext context) {
-
     _initTab();
-    // TODO: implement build
     return Scaffold(
       body: Center(
         child: _pageListWidget.elementAt(_selectIndex),
