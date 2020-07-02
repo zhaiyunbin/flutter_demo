@@ -2,6 +2,7 @@
 class Images{
   static String imagesTab = "assets/tab/";
   static String imagesHome = "assets/home/";
+  static String imagesMenu = "assets/menu/";
   //首页
   static String main = "tab_home";
   static String mainDef = "tab_home_def";
@@ -15,11 +16,16 @@ class Images{
   static String homeHeaderJs = "home_js";
   static String homeHeaderYy = "home_my";
   static String homeHeaderSs = "home_ss";
+
+  static String menuTest = "testnews";
+
   static String getTabImagePath(String name, {String format: 'png'}) {
     return imagesTab+'$name.$format';
   }
   static String getHomeImagePath(String name, {String format: 'png'}) {
     return imagesHome+'$name.$format';
   }
-
+  static String getMenuImagePath(String name, {String format: 'png'}) {
+    return imagesMenu+'$name.$format';
+  }
 }
